@@ -45,7 +45,7 @@ Most of these questions were already part of my [Cloud vs In-house talk](https:/
    
 2. How do you enact the shared responsibility model between CSPs and their customers? Please explain your role and my role in the protection of my and my customers data.  
    
-   You will almost certainly not have complete control over the data you entrust to your CSP, but they will also not assume responsibility over the data you entrust to them, or how it is accessed. One example of this might be, how do you preserve secrecy for data at rest? For example, are you using the most suitable Key Derivation Function (KDF) as I discuss in depth in the [Web Applications chapter](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-data-store-compromise-which-kdf-to-use) of [Holistic Info-Sec for Web Developers, Fascicle 1](f1.holisticinfosecforwebdevelopers.com) and adjusting the number of iterations applied each year (as discussed in the [MembershipReboot](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-lack-of-authentication-authorisation-session-management-technology-and-design-decisions-membershipreboot) subsection of the [Web Applications chapter](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) of Holistic Info-Sec for Web Developers Fascicle 1) to the secrets stored in your data stores? The data you hand over to your CSP is no more secure than I discuss in the Management of Application Secrets subsections of the Web Applications chapter of Holistic Info-Sec for Web Developers Fascicle 1, and in many cases has the potential to be less secure for some of the following reasons:  
+   You will almost certainly not have complete control over the data you entrust to your CSP, but they will also not assume responsibility over the data you entrust to them, or how it is accessed. One example of this might be, how do you preserve secrecy for data at rest? For example, are you using the most suitable Key Derivation Function (KDF) as I discuss in depth in the [Web Applications chapter](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-data-store-compromise-which-kdf-to-use) of [Holistic Info-Sec for Web Developers, Fascicle 1](http://f1.holisticinfosecforwebdevelopers.com) and adjusting the number of iterations applied each year (as discussed in the [MembershipReboot](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-lack-of-authentication-authorisation-session-management-technology-and-design-decisions-membershipreboot) subsection of the [Web Applications chapter](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) of Holistic Info-Sec for Web Developers Fascicle 1) to the secrets stored in your data stores? The data you hand over to your CSP is no more secure than I discuss in the Management of Application Secrets subsections of the Web Applications chapter of Holistic Info-Sec for Web Developers Fascicle 1, and in many cases has the potential to be less secure for some of the following reasons:  
    
    * An often encountered false assumption is that somehow the data you provide is safer by default on your CSP's network
    * Your CSP can be forced by governing authorities to give up the data you entrust to them, as we discuss in the [Giving up Secrets](#cloud-identify-risks-cloud-service-provider-vs-in-house-giving-up-secrets) subsection  
@@ -157,7 +157,7 @@ This point in the chapter, is a good time to orient yourself with the related to
 
 **[Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com/)**:
 
-[People chapter](https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people)
+[People](https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people) chapter
 
 * Ignorance
 * Morale, Productivity and Engagement Killers
@@ -203,8 +203,8 @@ On the Software Engineering Radio show, I hosted an interview with Zane Lackey o
 With the shift to the Cloud, AppSec has become more important than it used to be, recognised and discussed:
 
 * Previously in this chapter by the number two issue of the [CSP Customer Responsibility](#cloud-identify-risks-shared-responsibility-model-csp-customer-responsibility) of the Shared Responsibility Model
-* In the [Application Security](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-application-security) subsection of Docker in the VPS chapter of Holistic Info-Sec for Web Developers Fascicle 1
-* Entirely in the next chapter (Web Applications)
+* In the Application Security subsection of my [Docker Security book](https://binarymist.io/publication/docker-security/)
+* Entirely in the [Web Applications chapter](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) of Holistic Info-Sec for Web Developers, Fascicle 1 
 
 In general, as discussed in the [Shared Responsibility Model](#cloud-identify-risks-shared-responsibility-model), the dedicated security resources, focus, awareness, engagement of our major CSPs are usually greater than most organisations have access to. This pushes the target areas for the attackers further up the tree. People, followed by AppSec, represent the lowest hanging fruit for the attackers.
 
@@ -235,7 +235,7 @@ Here are some examples of violating least privilege from [Holistic Info-Sec for 
 
 Hopefully you are getting more clarity on least privilege, and its propensity to break down in a cloud environment. Some examples:
 
-* **Running services as root**: A perfect example of this is running a docker container that does not specify a non-root user in its image. Docker will default to root if not configured otherwise, as discussed in my [Docker Security book](https://binarymist.io/publication/docker-security/), also blogged about [here](https://binarymist.io/blog/2018/03/31/docker-security/#the-default-user-is-root)
+* **Running services as root**: A perfect example of this is running a docker container that does not specify a non-root user in its image. Docker will default to root if not configured otherwise, as discussed in my [Docker Security book](https://binarymist.io/publication/docker-security/), also [blogged about](https://binarymist.io/blog/2018/03/31/docker-security/#the-default-user-is-root)
 * **Configuration Settings Changed Ad Hoc**: Because there are so many features and configurations that can be easily modified, developers and administrators will modify them. For example, someone needs immediate access when we are in the middle of something else, that we quickly modify a permissions setting without realising we have just modified that permission for a group of other people as well. It is so easy to make ad hoc changes, they will be made
 * **Machine Instance Access To Open**: Is an attacker permitted to access your machine instances from anywhere? If so, this is an additional attack surface
 
@@ -262,7 +262,7 @@ Below are some of the ways I have seen private keys mishandled.
 * Private key is not private if it is shared amongst the team
 * No pass-phrase, means no second factor of authentication
 * Because there is only one user (single key-pair) being used on the VPSs, there is also no audit trail
-* The weakest link is the weakest wiki password of all the developers, and we all know how weak that is likely to be, with a bit of reconnaissance, probably guessable in a few attempts without any password profiling tools. I have discussed this and demonstrated a collection of password profiling tools in the "Weak Password Strategies" subsection of the People chapter of [Fascicle 0](https://f1.holisticinfosecforwebdevelopers.com). Once the attacker has the weakest password, then they own all of the EC2 (if on AWS) instances, or any resource that is using key-pair authentication. If the organisation is failing this badly, then they almost certainly will not have any password complexity constraints on their wiki either
+* The weakest link is the weakest wiki password of all the developers, and we all know how weak that is likely to be, with a bit of reconnaissance, probably guessable in a few attempts without any password profiling tools. I have discussed this and demonstrated a collection of password profiling tools in the "Weak Password Strategies" subsection of the People chapter of [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com). Once the attacker has the weakest password, then they own all of the EC2 (if on AWS) instances, or any resource that is using key-pair authentication. If the organisation is failing this badly, then they almost certainly will not have any password complexity constraints on their wiki either
 
 Most developers will also blindly accept what they think are the server key fingerprints without verifying them, which opens them up to a MItM attack, as discussed in the VPS chapter under the [SSH subsection](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-disable-remove-services-harden-what-is-left-ssh-establishing-your-ssh-servers-key-fingerprint). This quickly moves from just being a technical issue to a cultural one, where people are trained to accept that the server is who it says it is. The fact that they have to verify the fingerprint is essentially a step that gets in their way.
 
@@ -270,7 +270,7 @@ Most developers will also blindly accept what they think are the server key fing
 
 When Docker reads the instructions in the following `Dockerfile`, an image is created that copies your certificate, private key, and any other secrets you have declared, and adds them to an additional layer and forms the resulting image. Both `COPY` and `ADD` will bake what ever you are copying or adding into an additional layer or delta, as discussed in the Consumption from Registries subsection in my [Docker Security book](https://binarymist.io/publication/docker-security/). Whoever can access this image from a public or less public registry now has access to your certificate and even worse your private key.
 
-Anyone can see how these images were built using these tools:
+Anyone can see how these images were built using the following tools:
 
 * [dockerfile-from-image](https://github.com/CenturyLinkLabs/dockerfile-from-image)
 * [ImageLayers](https://imagelayers.io/)
@@ -356,15 +356,13 @@ AWS Lambda will, by default allow any given function a [concurrent execution lim
 
 The glaringly obvious risks with the management of configuration and infrastructure as code is the management of secrets, and most other forms of information security. "Huh?" I hear you say. Let me try and unpack that statement.
 
-When you create and configure infrastructure as code, you are essentially combining many technical aspects: machine instances, networking, the Cloud, and your applications, and bake them all into code to be executed.
+When you create and configure infrastructure as code, you are essentially combining many technical aspects: machine instances, networking, the Cloud, and your applications, and baking them all into code to be executed.
 
 If you create security defects as part of the configuration or infrastructure, then lock them up in code, you will have the same consistent security defects each time that code is run. Hence,  Software Engineers now need to understand much more than they used to about security. We are now responsible for so much more than we used to be.
 
-Now we will focus on a collection of the largest providers.
-
 ## AWS {#cloud-identify-risks-aws}
 
-The AWS section is intended as overflow for items that have not been covered elsewhere in this chapter, and requires some attention.
+The AWS section is intended as overflow for items that have not been covered elsewhere in this chapter, and require some attention.
 
 The [CIS AWS Foundations document](https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf) is very useful in understanding some of the risks in AWS, as well as auditing options to determine if they exist currently. This document also includes countermeasures, including clear direction on how to apply them. This is well worth following along with as you read through this chapter.
 
