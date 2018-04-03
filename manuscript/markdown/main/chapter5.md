@@ -14,15 +14,15 @@ There is not a lot to add to the [Risks that Solution Causes](#cloud-risks-that-
 
 ## People
 
-Refer to the "Costs and Trade-offs" subsection of the People chapter of [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com).
+Refer to the [Costs and Trade-offs subsection](https://f0.holisticinfosecforwebdevelopers.com/chap08.html#leanpub-auto-ssm-costs-and-trade-offs-1) of the People chapter of Holistic Info-Sec for Web Developers,[Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com).
 
 ## Application Security
 
-Refer to the [Costs and Trade-offs](#web-applications-costs-and-trade-offs) subsection of the Web Applications chapter.
+Refer to the [Costs and Trade-offs subsection](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-costs-and-trade-offs) of the Web Applications chapter of Holistic Info-Sec for Web Developers, [Fascicle 1](https://f1.holisticinfosecforwebdevelopers.com).
 
 ## Network Security
 
-Refer to the [Costs and Trade-offs](#network-costs-and-trade-offs) subsection of the Network chapter.
+Refer to the [Costs and Trade-offs subsection](https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-costs-and-trade-offs) of the Network chapter of Holistic Info-Sec for Web Developers, [Fascicle 1](https://f1.holisticinfosecforwebdevelopers.com).
 
 
 ## Violations of Least Privilege
@@ -33,15 +33,15 @@ It is worth investing the effort to make sure only the required user permissions
 * **Configuration Settings Changed Ad Hoc**: Remember detection works where prevention fails. Where your change control fails, because it is decided not to use it, you need something to detect changes and notify someone who cares. For this, there are also other options specifically designed to perform this function. For a collection of such tools, review the [Tooling](#cloud-countermeasures-aws-additional-tooling) sections.  
    
    You need to have these tools set up so that they are [continually auditing](https://blog.cloudsploit.com/the-importance-of-continual-auditing-in-the-cloud-8d22e0554639) your infrastructure and notifying the person(s) responsible for issues resolution, rather than having people continually manually reviewing settings, permissions, and so forth
-* **Machine Instance Access To Open**: Set-up a bastion host and lock the source IP address down to the public facing IP address of your bastion host required to access your machine instances. I discussed locking the source IP address down in the [Hardening SSH](#vps-countermeasures-disable-remove-services-harden-what-is-left-ssh-hardening-ssh) subsection of the VPS chapter.  
+* **Machine Instance Access To Open**: Set-up a bastion host and lock the source IP address down to the public facing IP address of your bastion host required to access your machine instances. I discussed locking the source IP address down in the [Hardening SSH subsection](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-disable-remove-services-harden-what-is-left-ssh) of the VPS chapter of Holistic Info-Sec for Web Developers, Fascicle 1.  
    
    Your bastion host will be hardened as discussed throughout the VPS chapter. All authorised workers can VPN to the bastion host and SSH from there, or just SSH tunnel from wherever they are through the bastion host via port forwarding to any given machine instances.  
    
-   If you have Windows boxes you need to reach, you can tunnel RDP through your SSH tunnel, see my[blog post about this](https://blog.binarymist.net/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/).  
+   If you have Windows boxes you need to reach, you can tunnel RDP through your SSH tunnel, see my[blog post about this](https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/).  
    
    Rather than tunnelling, another option SSH gives us (using the `-A` option) is to hop from the bastion host to your machine instances by forwarding the private key. This does include the risk that someone could gain access to your forwarded SSH agent connection, thus being able to use your private key while you have an SSH connection established. `ssh-add -c` can provide some protection with this.  
    
-   If you do decide to use the `-A` option, then you are essentially considering your bastion host as a trusted machine. I commented on the `-A` option in the [Tunnelling SSH](#vps-countermeasures-disable-remove-services-harden-what-is-left-ssh-tunneling-ssh) subsection of the VPS chapter. There is plenty of good [documentation](https://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/) on setting up the bastion host in AWS. AWS provides some [Best Practices](https://docs.aws.amazon.com/quickstart/latest/linux-bastion/architecture.html#best-practices) for security on bastion hosts, and also [discusses](https://aws.amazon.com/blogs/security/how-to-record-ssh-sessions-established-through-a-bastion-host/) recording the SSH sessions that your users establish through a bastion host for auditing purposes
+   If you do decide to use the `-A` option, then you are essentially considering your bastion host as a trusted machine. I commented on the `-A` option in the [Tunnelling SSH](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-disable-remove-services-harden-what-is-left-ssh-tunneling-ssh) subsection of the VPS chapter of Holistic Info-Sec for Web Developers, Fascicle 1. There is plenty of good [documentation](https://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/) on setting up the bastion host in AWS. AWS provides some [Best Practices](https://docs.aws.amazon.com/quickstart/latest/linux-bastion/architecture.html#best-practices) for security on bastion hosts, and also [discusses](https://aws.amazon.com/blogs/security/how-to-record-ssh-sessions-established-through-a-bastion-host/) recording the SSH sessions that your users establish through a bastion host for auditing purposes
 
 ## Storage of Secrets
 
@@ -49,7 +49,7 @@ Credential and key theft are right up there with the most common attacks. This i
 
 ### Private Key Abuse
 
-I have discussed company culture and techniques for bringing change in various [talks](https://www.slideshare.net/kimcarter75098/agile-nz2014fornonattendees-38768039), [blog posts](https://blog.binarymist.net/2014/04/26/culture-in-the-work-place/#effecting-change), etc. The following is an extract from my "Culture in the work place" blog post:
+I have discussed company culture and techniques for bringing change in various [talks](https://binarymist.io/talk/agilenz-2014-talk-how-to-increase-software-developer-productivity/), [blog posts](https://blog.binarymist.net/2014/04/26/culture-in-the-work-place/#effecting-change), etc. The following is an extract from my "Culture in the work place" blog post:
 
 Org charts, do not show how influence takes place in a business. In reality, businesses do not function through the organizational hierarchy but through its hidden social networks.
 
