@@ -12,19 +12,19 @@ Cloud Security - Quick Reference addresses the issues that I have had most commo
 
 This book is laid out by using each step of the Sensible Security Model (SSM) as a chapter.
 
-**Asset Identification** discusses some common assets you may have that you need to think about in terms of what happens if/when an attacker compromises them.
+[**Asset Identification**](#asset-identification) discusses some common assets you may have that you need to think about in terms of what happens if/when an attacker compromises them.
 
-**Identify Risks** works through a collection of risks to your Cloud environment that you will probably be facing.
+[**Identify Risks**](#identify-risks) works through a collection of risks to your Cloud environment that you will probably be facing.
 
-We then take these risks and discuss possible **Countermeasures** in the following chapter.
+We then take these risks and discuss possible [**Countermeasures**](#countermeasures) in the following chapter.
 
-Following the Countermeasures chapter is the **Risks that Solutiun Causes** followed by **Costs and Trade-offs** which take the countermeasures and address the possible solution risks followed by potential costs and trade-offs.
+Following the Countermeasures chapter is the [**Risks that Solution Causes**](#risks-that-solution-causes) followed by [**Costs and Trade-offs**](#costs-and-trade-offs) which take the countermeasures and address the possible solution risks, followed by potential costs and trade-offs.
 
 Each chapter takes the same issues and addresses them in terms of the current threat modelling stage. Because of this, you may find your self jumping between chapters a bit.
 
 
-I hope this book serves you well in providing the knowledge you will need to harden your Cloud environments along with a good understanding of how to apply the Sensible Security Model to your Cloud environments.
+I hope this book serves you well in providing the knowledge you will need to harden your Cloud environments along with a good understanding of how to apply the Sensible Security Model to the same..
 
-If you are interested in what I do or would like to review my blog, you can find it at [binarymist.io/blog](https://binarymist.io/blog)
+I blog at [binarymist.io/blog](https://binarymist.io/blog).
 
-If you require any help with improving the security stature of your Development Teams, review the services that I offer you at [binarymist.io/#services](https://binarymist.io/#services)
+If you require any help with improving the security stature of your Development Teams, review the services that I offer at [binarymist.io/#services](https://binarymist.io/#services)
