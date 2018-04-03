@@ -36,7 +36,7 @@ The following is in response to the set of frequently asked questions under the 
    
 * **(Q)**: _What is the difference between application security and network security? Aren't they just two aspects of the same thing?_  
    
-   **(A)**: No, for application security, see the [Web Applications chapter](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) of Holistic Info-Sec for Web Developers, Fascicle 1. For network security, see the [Network](https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network) chapter of Holistic Info-Sec for Web Developers. Again, as Software Engineers, you are now responsible for all aspects of information security  
+   **(A)**: No, for application security, see the [Web Applications chapter](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) of Holistic Info-Sec for Web Developers, Fascicle 1. For network security, see the [Network chapter](https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network) of Holistic Info-Sec for Web Developers, Fascicle 1. Again, as Software Engineers, you are now responsible for all aspects of information security  
    
 * **(Q)**: _If I have implemented TLS for communication, have I fixed all of the network security problems?_  
    
