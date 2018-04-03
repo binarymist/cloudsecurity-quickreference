@@ -14,15 +14,15 @@ In the [Countermeasures](#cloud-countermeasures-cloud-service-provider-vs-in-hou
 
 ## People
 
-Refer to the "Risks that Solution Causes" subsection of the People chapter of [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com).
+Refer to the [Risks that Solution Causes subsection](https://f0.holisticinfosecforwebdevelopers.com/chap08.html#leanpub-auto-ssm-risks-that-solution-causes-1) of the People chapter of Holistic Info-Sec for Web Developers, [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com).
 
 ## Application Security
 
-Refer to the [Risks that Solution Causes](#web-applications-risks-that-solution-causes) subsection of the Web Applications chapter.
+Refer to the [Risks that Solution Causes subsection](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-risks-that-solution-causes) of the Web Applications chapter of Holistic Info-Sec for Web Developers, [Fascicle 1](https://f1.holisticinfosecforwebdevelopers.com).
 
 ## Network Security
 
-Refer to the [Risks that Solution Causes](#network-risks-that-solution-causes) subsection of the Network chapter.
+Refer to the [Risks that Solution Causes subsection](https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-risks-that-solution-causes) of the Network chapter of Holistic Info-Sec for Web Developers, [Fascicle 1](https://f1.holisticinfosecforwebdevelopers.com).
 
 ## Violations of Least Privilege
 
