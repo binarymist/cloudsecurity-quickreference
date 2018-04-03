@@ -1,6 +1,6 @@
 # 3. Countermeasures {#countermeasures}
 
-Revisit the Countermeasures subsection of the first chapter of [Fascicle 0](https://leanpub.com/holistic-infosec-for-web-developers).
+Revisit the [Countermeasures subsection](https://f0.holisticinfosecforwebdevelopers.com/chap03.html#starting-with-the-30000-foot-view-countermeasures) of the first chapter of [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com/).
 
 As I briefly touch on in the [CSP Account Single User Root](#cloud-countermeasures-violations-of-least-privilege-csp-account-single-user-root) subsection, [Canarytokens](https://canarytokens.org/) are excellent tokens you can drop anywhere on your infrastructure. When an attacker opens one of these tokens, an email will be sent to a pre-defined email address with a specific message that you define. This provides an early warning that someone unfamiliar with your infrastructure is running things that do not normally get run. There are quite a few different tokens available and new ones are being added every so often. These tokens are very quick and free to generate, and can be dropped wherever you like on your infrastructure. [Haroon Meer](https://twitter.com/haroonmeer) discusses these on the [Network Security](https://binarymist.io/publication/ser-podcast-network-security/) show I hosted for Software Engineering Radio near the end of the episode.
 
@@ -144,9 +144,9 @@ You can have a more secure cloud environment than any CSP if you decide to do so
 
 You need to consider what are your objectives for using the given CSPs services for. If you are creating and deploying applications, then your applications will be a weaker link in the security chain, this is a very common case and one that is often overlooked. To attempt to address application security, I wrote about this in the [Web Applications](#web-applications) chapter.
 
-Your attackers will attack your weakest area first. In most cases this is not your CSP, but directed at your organisation's people due to lack of knowledge, passion, engagement, or a combination of each. If you have a physical premises, this can also be an easy target. Usually application security follows closely after people security. This is why I include the Physical and People chapters in [Fascicle 0](https://leanpub.com/holistic-infosec-for-web-developers) of this book series, they are the most commonly overlooked. I added the Web Applications chapter last in this fascicle in order to first help you build a solid foundation of security in other overlooked areas before we addressed application security. I also wanted it to be what sticks in your mind once you have read this fascicle.
+Your attackers will attack your weakest area first. In most cases this is not your CSP, but directed at your organisation's people due to lack of knowledge, passion, engagement, or a combination of each. If you have a physical premises, this can also be an easy target. Usually application security follows closely after people security. This is why I include the Physical and People chapters in [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com) of this book series, they are the most commonly overlooked. I added the Web Applications chapter last in this fascicle in order to first help you build a solid foundation of security in other overlooked areas before we addressed application security. I also wanted it to be what sticks in your mind once you have read this fascicle.
 
-Based on the threat modelling I hope you have done through each chapter, as first introduced in [Fascicle 0](https://leanpub.com/holistic-infosec-for-web-developers), you should be starting to work out where cloud security rates on your list of risks to your assets. By the end of this chapter, you should have an even better idea.
+Based on the threat modelling I hope you have done through each chapter, as first introduced in [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com), you should be starting to work out where cloud security rates on your list of risks to your assets. By the end of this chapter, you should have an even better idea.
 
 #### Skills
 
@@ -175,7 +175,7 @@ Some times it can cost more up front to go with an open (non-proprietary) offeri
 
 Often technology choices are chosen because they are the "new shiny", as everyone else is using it, or there is a lot of buzz or hype around it.
 
-**An analogy**: Do Software Developers write code that is untestable because it is cheaper to write? Many development shops do, I discussed test driven development (TDD) in the Process and Practises chapter of [Fascicle 0](https://leanpub.com/holistic-infosec-for-web-developers/). I have [blogged](https://blog.binarymist.net/?s=tdd), [spoken and offered workshops](https://blog.binarymist.net/presentations-publications/) on the topic of testability extensively. Writing untestable code is a short sighted approach. Code is read, revised, and extended many times more than it is written initially.
+**An analogy**: Do Software Developers write code that is untestable because it is cheaper to write? Many development shops do, I discussed test driven development (TDD) in the Process and Practises chapter of [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com/). I have [blogged](https://blog.binarymist.net/?s=tdd), [spoken and offered workshops](https://blog.binarymist.net/presentations-publications/) on the topic of testability extensively. Writing untestable code is a short sighted approach. Code is read, revised, and extended many times more than it is written initially.
 
 If you are putting all your cost savings in the initial code writing phase, and failing to consider all the times that modification will be attempted, then you are missing huge cost savings. Taking an initial hit up front to write testable code, specifically, code that has the properties of maintainability and extensibility defined by the [Liskov Substitution Principle](https://blog.binarymist.net/2010/10/11/lsp-dbc-and-nets-support/), will set you up so that the interface is not coupled to the implementation.
 
@@ -205,7 +205,7 @@ As I mentioned in the [Identify Risks](#cloud-identify-risks-review-other-chapte
 
 ### People
 
-Most of these countermeasures are discussed in the People chapter of [Fascicle 0](https://leanpub.com/holistic-infosec-for-web-developers/)
+Most of these countermeasures are discussed in the People chapter of [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com/)
 
 ### Application Security
 
@@ -548,7 +548,7 @@ The container goes from the developer's machine once tested, to the staging envi
 1. Pick off repetitious, boring, prone-to-human-error and easily automatable tasks that your team(s) have been doing. Script and source control them
     * **Configuration management**: One of the grassroot types of tooling options required here is a configuration management tool. I have found Ansible to be excellent. If you use Docker containers, most of the configuration management is already taken care of in the [`Dockerfile`](#vps-countermeasures-docker-the-dDefault-user-is-root). The [`docker-compose.yml`](#nodegoat-docker-compose.yml) file, orchestration platforms and tooling take us to "infrastructure as code"
     * **Infrastructure management**: Terraform is one of the tools that can act as a simple version control for cloud infrastructure. One of my co-hosts (lead host Robert Blumen) on Software Engineering Radio ran an excellent [podcast on Terraform](http://www.se-radio.net/2017/04/se-radio-episode-289-james-turnbull-on-declarative-programming-with-terraform/)
-    * Ultimately we want to achieve the maturity where we can have an entire front-end and back-end (if Web) deployment automated. There are many things this depends on. A deployment must come from a specific source branch that is production-ready. A production-ready branch is labelled as such because another branch leading into it has passed all the quality checks mentioned in the Agile Development and Practises subsection in the Process and Practises chapter of [Fascicle 0](https://leanpub.com/holistic-infosec-for-web-developers/), as well as [continuous integration](https://blog.binarymist.net/2014/02/22/automating-specification-by-example-for-net/)
+    * Ultimately we want to achieve the maturity where we can have an entire front-end and back-end (if Web) deployment automated. There are many things this depends on. A deployment must come from a specific source branch that is production-ready. A production-ready branch is labelled as such because another branch leading into it has passed all the quality checks mentioned in the Agile Development and Practises subsection in the Process and Practises chapter of [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com/), as well as [continuous integration](https://blog.binarymist.net/2014/02/22/automating-specification-by-example-for-net/)
 2. Once a few of the above tasks are done, you can start stringing them together in pipelines
 3. Schedule execution of any/all of the above
 
@@ -560,7 +560,7 @@ As mentioned in the [risks subsection](#cloud-identify-risks-aws) for AWS, the [
 
 Add a password to the default user.
 
-We have covered the people aspects, along with exploitation techniques of Weak Password Strategies, in the People chapter of [Fascicle 0](https://leanpub.com/holistic-infosec-for-web-developers/)
+We have covered the people aspects, along with exploitation techniques of Weak Password Strategies, in the People chapter of [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com/)
 
 We have covered the technical aspects of password strategies in the [Review Password Strategies](#vps-countermeasures-disable-remove-services-harden-what-is-left-review-password-strategies) subsection of the VPS chapter
 
