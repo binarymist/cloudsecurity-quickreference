@@ -261,6 +261,12 @@ eate-your-key-pair
 **Every user should have their own key-pair**  
 [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 
+**Key Derivation Functiuons**  
+[https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-data-store-compromise-which-kdf-to-use](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-data-store-compromise-which-kdf-to-use)
+
+**Cyphers**  
+[https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-cryptography-on-the-client](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-cryptography-on-the-client)
+
 **Plesant Password Server**  
 [http://pleasantsolutions.com/PasswordServer/](http://pleasantsolutions.com/PasswordServer/)  
 **Password Manager Pro**  
