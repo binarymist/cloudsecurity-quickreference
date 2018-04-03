@@ -14,7 +14,7 @@ There is not a lot to add to the [Risks that Solution Causes](#cloud-risks-that-
 
 ## People
 
-Refer to the [Costs and Trade-offs subsection](https://f0.holisticinfosecforwebdevelopers.com/chap08.html#leanpub-auto-ssm-costs-and-trade-offs-1) of the People chapter of Holistic Info-Sec for Web Developers,[Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com).
+Refer to the [Costs and Trade-offs subsection](https://f0.holisticinfosecforwebdevelopers.com/chap08.html#leanpub-auto-ssm-costs-and-trade-offs-1) of the People chapter of Holistic Info-Sec for Web Developers, [Fascicle 0](https://f0.holisticinfosecforwebdevelopers.com).
 
 ## Application Security
 
