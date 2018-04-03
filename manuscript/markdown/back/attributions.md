@@ -162,8 +162,10 @@ tual-machines/
 
 **In AWS**  
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)  
+
 **You need to keep a close watch on which permissions**  
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_permissions.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_permissions.html)  
+
 **Are assigned to policies**  
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
 
