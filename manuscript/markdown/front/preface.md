@@ -7,9 +7,9 @@
 
 ## Description
 
-As with my book series [Holistic Info-Sec for Web Developers](www.holisticinfosecforwebdevelopers.com), I have used bruce schneier’s Sensible Security Model (SSM) as we threat model the Cloud environment. You are encouraged to draw parallels between the structure I have created and your own Cloud environment.
+As with my book series [Holistic Info-Sec for Web Developers](www.holisticinfosecforwebdevelopers.com), I have used bruce schneier's Sensible Security Model (SSM) as we threat model the Cloud environment. You are encouraged to draw parallels between the structure I have created and your own Cloud environment.
 
-I have focussed on identifying and addressing the assets, risks, countermeasures, risks that the countermeasures may introduce, and the costs and trade-offs that I frequently encounter when working with organisations and their Development Teams.
+I have focussed on identifying and addressing the assets, risks, countermeasures, risks that the countermeasures may introduce, and the costs and trade-offs that I frequently encounter when working with organisations and their Development Teams on Cloud environments.
 
 This book is targeted towards helping Architects and Software Engineers in a hurry.
 
@@ -17,7 +17,7 @@ This book is targeted towards helping Architects and Software Engineers in a hur
 
 My intention with this book is for it to serve as a reference to help you recognise your assets, your attackers, and understand both your CSPs responsibilities and your own responsibilities in terms of securing your Cloud environment. I will also discuss many risks that I've seen, and address them with potential countermeasures with the goal of designing and implementing a Cloud environment that will withstand the attacks from your adversaries. At the same time not getting bogged down in hundreds of pages of content.
 
-Please contact me if you don’t understand something within the book at: binarymist.io/#contact.  
+Please contact me if you don't understand something within the book at: [binarymist.io/#contact](https://binarymist.io/#contact).  
 If you find any errors, please:
 
 * Submit a pull request at [github.com/binarymist/cloudsecurity-quickreference/pulls](https://github.com/binarymist/cloudsecurity-quickreference/pulls) or

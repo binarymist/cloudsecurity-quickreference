@@ -18,12 +18,12 @@ This book is laid out by using each step of the Sensible Security Model (SSM) as
 
 We then take these risks and discuss possible [**Countermeasures**](#countermeasures) in the following chapter.
 
-Following the Countermeasures chapter is the [**Risks that Solution Causes**](#risks-that-solution-causes) followed by [**Costs and Trade-offs**](#costs-and-trade-offs) which take the countermeasures and address the possible solution risks, followed by potential costs and trade-offs.
+Following the Countermeasures chapter is the [**Risks that Solution Causes**](#risks-that-solution-causes) chapter which take the countermeasures and address the possible solution risks, followed by the [**Costs and Trade-offs**](#costs-and-trade-offs) chapter which addresses the potential costs and trade-offs.
 
 Each chapter takes the same issues and addresses them in terms of the current threat modelling stage. Because of this, you may find your self jumping between chapters a bit.
 
 
-I hope this book serves you well in providing the knowledge you will need to harden your Cloud environments along with a good understanding of how to apply the Sensible Security Model to the same..
+I hope this book serves you well in providing the knowledge you will need to harden your Cloud environments along with a good understanding of how to apply the Sensible Security Model to the same.
 
 I blog at [binarymist.io/blog](https://binarymist.io/blog).
 
