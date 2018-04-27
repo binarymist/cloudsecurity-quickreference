@@ -424,7 +424,7 @@ There are many places in software that require access to secrets, to communicate
 
 **[Ansible Vault](https://docs.ansible.com/ansible/latest/playbooks_vault.html)**
 
-Ansible is an [Open Source](https://github.com/ansible/ansible/blob/devel/docs/docsite/rst/playbooks_vault.rst) configuration management tool, and has a simple secrets management feature.
+Ansible is an [Open Source](https://github.com/ansible/ansible/blob/devel/docs/docsite/) configuration management tool, and has a simple secrets management feature.
 
 * Ansible tasks and handlers can be encrypted
 * Arbitrary files, including binary data can be encrypted

@@ -37,7 +37,7 @@ It is worth investing the effort to make sure only the required user permissions
    
    Your bastion host will be hardened as discussed throughout the VPS chapter. All authorised workers can VPN to the bastion host and SSH from there, or just SSH tunnel from wherever they are through the bastion host via port forwarding to any given machine instances.  
    
-   If you have Windows boxes you need to reach, you can tunnel RDP through your SSH tunnel, see my[blog post about this](https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/).  
+   If you have Windows boxes you need to reach, you can tunnel RDP through your SSH tunnel, see my [blog post about this](https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/).  
    
    Rather than tunnelling, another option SSH gives us (using the `-A` option) is to hop from the bastion host to your machine instances by forwarding the private key. This does include the risk that someone could gain access to your forwarded SSH agent connection, thus being able to use your private key while you have an SSH connection established. `ssh-add -c` can provide some protection with this.  
    
