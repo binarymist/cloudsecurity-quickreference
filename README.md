@@ -1,5 +1,6 @@
 # Cloud Security Quick Reference
 ## Homepage: [https://binarymist.io/publication/cloud-security/](https://binarymist.io/publication/cloud-security/)
+## Blog Post [https://binarymist.io/blog/2018/04/28/cloud-security/](https://binarymist.io/blog/2018/04/28/cloud-security/)
 
 <br>
 
